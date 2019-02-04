@@ -1,0 +1,38 @@
+#script-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #draw-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+  }
+  
+  .input_box {
+    border: 1px solid #0000004a;
+    border-radius: 0.5rem;
+    min-width: 2rem;
+    height: inherit;
+    box-shadow: inset 0px 0px 0.3rem 0px #00000054;
+  }
+  
+  .input_box::before{
+    content: attr(data-text);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
